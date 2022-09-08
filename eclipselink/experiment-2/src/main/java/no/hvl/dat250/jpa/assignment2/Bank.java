@@ -12,7 +12,7 @@ public class Bank {
     private String name;
 
     @OneToMany(mappedBy = "myBank")
-    private Set<CreditCard> creditcardSet = new HashSet<CreditCard>();
+    private Set<CreditCard> creditcardSet = new HashSet<>();
 
 
     public void setOwnedCards(CreditCard creditCard) {

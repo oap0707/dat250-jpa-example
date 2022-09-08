@@ -18,29 +18,32 @@ public class Main {
 
         // TODO: Persist object world corresponding to the domain model of experiment 2.
         Person person = new Person();
+        Address address = new Address();
+        CreditCard firstCreditcard = new CreditCard();
+        CreditCard secondCreditcard = new CreditCard();
+        Pincode pincode = new Pincode();
+        Bank bank = new Bank();
+
         person.setName("Max Mustermann");
 
-        Address address = new Address();
         address.setStreet("Inndalsveien");
         address.setNumber(28);
 
-        CreditCard firstCreditcard = new CreditCard();
+        person.setAddresses(address);
+        address.setOwner(person);
+
         firstCreditcard.setNumber(12345);
         firstCreditcard.setBalance(-5000);
         firstCreditcard.setLimit(-10000);
 
-        CreditCard secondCreditcard = new CreditCard();
         secondCreditcard.setNumber(123);
         secondCreditcard.setBalance(1);
         secondCreditcard.setLimit(2000);
 
-        Pincode pincode = new Pincode();
         pincode.setPincode("123");
         pincode.setCount(1);
 
-        Bank bank = new Bank();
         bank.setName("Pengebank");
-
         bank.setOwnedCards(firstCreditcard);
         bank.setOwnedCards(secondCreditcard);
 
@@ -50,7 +53,6 @@ public class Main {
         firstCreditcard.setPincode(pincode);
         secondCreditcard.setPincode(pincode);
 
-        person.setAddresses(address);
         person.setCreditcards(firstCreditcard);
         person.setCreditcards(secondCreditcard);
 

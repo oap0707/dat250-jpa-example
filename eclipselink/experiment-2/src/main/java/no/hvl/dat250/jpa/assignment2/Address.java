@@ -1,9 +1,7 @@
 package no.hvl.dat250.jpa.assignment2;
 
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
+import java.util.*;
 
 @Entity
 public class Address {
@@ -14,7 +12,7 @@ public class Address {
     private Integer number;
 
     @ManyToMany(mappedBy = "addresses")
-    private List<Person> owners = new ArrayList<>();
+    private Set<Person> owners = new HashSet<>();
 
     public void setStreet(String newStreet) {
         // TODO: implement method!
@@ -41,8 +39,8 @@ public class Address {
         return number;
     }
 
-    public String getOwners() {
+    public Collection<Person> getOwners() {
         // TODO: implement method!
-        return owners.toString();
+        return owners;
     }
 }

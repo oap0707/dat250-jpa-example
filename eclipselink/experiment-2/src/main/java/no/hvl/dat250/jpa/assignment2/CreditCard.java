@@ -10,11 +10,13 @@ public class CreditCard {
     private Integer number;
     private Integer limit;
     private Integer balance;
-    @OneToOne
-    @JoinColumn(name = "pincode_id")
+    @OneToOne()
+    //foreign key
+    @JoinColumn(name = "pincodeId")
     private Pincode pincode;
 
     @ManyToOne(targetEntity = Bank.class)
+    @JoinColumn(name = "bankID")
     private Bank myBank;
 
     public void setBank(Bank bank) {
@@ -37,19 +39,19 @@ public class CreditCard {
         this.balance = newBalance;
     }
 
-    public int getNumber() {
+    public Integer getNumber() {
         // TODO: implement method!
         return number;
     }
 
-    public String getBalance() {
+    public Integer getBalance() {
         // TODO: implement method!
-        return balance.toString();
+        return balance;
     }
 
-    public String getLimit() {
+    public Integer getLimit() {
         // TODO: implement method!
-        return limit.toString();
+        return limit;
     }
 
     public Pincode getPincode() {

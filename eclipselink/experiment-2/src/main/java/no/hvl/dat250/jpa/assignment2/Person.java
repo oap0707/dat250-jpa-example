@@ -3,6 +3,7 @@ package no.hvl.dat250.jpa.assignment2;
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.HashSet;
 
 @Entity
 public class Person {
@@ -13,9 +14,9 @@ public class Person {
 
     @ManyToMany
     @JoinTable(name = "Person_Address")
-    private Collection<Address> addresses = new ArrayList<>();
+    private Collection<Address> addresses = new HashSet<>();
 
-    @OneToMany
+    @OneToMany(fetch = FetchType.LAZY)
     @JoinTable(name = "Person_Creditcard")
     private Collection<CreditCard> creditcards = new ArrayList<>();
 
