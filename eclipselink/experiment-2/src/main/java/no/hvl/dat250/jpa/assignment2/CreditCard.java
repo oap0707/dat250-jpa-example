@@ -40,27 +40,22 @@ public class CreditCard {
     }
 
     public Integer getNumber() {
-        // TODO: implement method!
         return number;
     }
 
     public Integer getBalance() {
-        // TODO: implement method!
         return balance;
     }
 
     public Integer getLimit() {
-        // TODO: implement method!
         return limit;
     }
 
     public Pincode getPincode() {
-        // TODO: implement method!
         return pincode;
     }
 
     public Bank getOwningBank() {
-        // TODO: implement method!
         return myBank;
     }
 }

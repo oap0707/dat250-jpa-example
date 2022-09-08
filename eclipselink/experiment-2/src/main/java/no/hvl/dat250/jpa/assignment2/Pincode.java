@@ -15,7 +15,6 @@ public class Pincode {
     }
 
     public void setPincode(String newPincode) {
-        // TODO: implement method!
         this.pincode = newPincode;
     }
 
@@ -28,12 +27,10 @@ public class Pincode {
     }
 
     public String getPincode() {
-        // TODO: implement method!
         return pincode;
     }
 
     public int getCount() {
-        // TODO: implement method!
         return count;
     }
 }

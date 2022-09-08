@@ -22,7 +22,6 @@ public class Person {
 
 
     public void setName(String newName) {
-        // TODO: implement method!
         this.name = newName;
     }
 
@@ -35,17 +34,14 @@ public class Person {
     }
 
     public String getName() {
-        // TODO: implement method!
         return name;
     }
 
     public Collection<Address> getAddresses() {
-        // TODO: implement method!
         return addresses;
     }
 
     public Collection<CreditCard> getCreditCards() {
-        // TODO: implement method!
         return creditcards;
     }
 }

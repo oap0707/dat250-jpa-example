@@ -16,7 +16,6 @@ public class Main {
 
         EntityTransaction tx = em.getTransaction();
 
-        // TODO: Persist object world corresponding to the domain model of experiment 2.
         Person person = new Person();
         Address address = new Address();
         CreditCard firstCreditcard = new CreditCard();

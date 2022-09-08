@@ -20,7 +20,6 @@ public class Bank {
     }
 
     public void setName(String newName) {
-        // TODO: implement method!
         this.name = newName;
     }
 
@@ -29,7 +28,6 @@ public class Bank {
     }
 
     public String getName() {
-        // TODO: implement method!
         return name;
     }
 
