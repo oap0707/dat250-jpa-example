@@ -5,7 +5,7 @@ I got an error with COUNT not being in a table (or
 something similar, I can't quite remember),
 but I realized I forgot to specify in persistence.xml 
 file to have a value here:
-value="jdbc:derby:C:\Users\Olesy\simpleDb;create=true"
+value="jdbc:derby:C:\Users\Olesy\simpleDb;create=true".
 
 When I added this the problem went away. 
 
