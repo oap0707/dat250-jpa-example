@@ -24,7 +24,9 @@ https://github.com/oap0707/dat250-jpa-example
 ## Explanation of database inspection:
 I don't know why but I didn't manage to inspect the database
 at all, even though I installed Intellij Ultimate. Maybe there
-was an issue but I didn't figure it out.
+was an issue but I didn't figure it out. I followed the tutorial
+video and did everything that was done there, but no luck. 
+I opened up the database but it was empty for some reason.
 
 #
 ## Any pending issues:
