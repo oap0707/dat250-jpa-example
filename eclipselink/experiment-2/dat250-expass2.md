@@ -16,19 +16,25 @@ when it came to is(Set.of(person)), but that was because
 I defined the owners set wrong, I wrote Collections<Person> = new HashSet<>()
 instead of Set<Person> owners = new HashSet<>().
 
+Last issue I had was actually to inspect database. I did everything correctly,
+but I didn't get anything up in the database and I didn't understand why. Then
+by a mistake I hit "refresh" button and everything showed itself! So that was
+quite funny.
+
 #
 ## Link to the project:
 https://github.com/oap0707/dat250-jpa-example
 
 #
 ## Explanation of database inspection:
-I don't know why but I didn't manage to inspect the database
-at all, even though I installed Intellij Ultimate. Maybe there
-was an issue but I didn't figure it out. I followed the tutorial
-video and did everything that was done there, but no luck. 
-I opened up the database but it was empty for some reason.
+Did it by downloading IntelliJ Ultimate, open project and then go to 
+view -> tool windows -> database. There I clicked the + sign and chose data 
+source to be apache derby. After that wrote the path to my simpleDB, user
+and password which I set to be test and pressed OK. I had to hit refresh after
+this to get the tables up. Right click TEST -> diagrams -> show visualization.
+![img.png](img.png)
 
 #
 ## Any pending issues:
-At the moment no inspection of database.
+None.
 
