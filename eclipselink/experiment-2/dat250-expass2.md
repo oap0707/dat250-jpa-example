@@ -22,7 +22,9 @@ https://github.com/oap0707/dat250-jpa-example
 
 #
 ## Explanation of database inspection:
-
+I don't know why but I didn't manage to inspect the database
+at all, even though I installed Intellij Ultimate. Maybe there
+was an issue but I didn't figure it out.
 
 #
 ## Any pending issues:
